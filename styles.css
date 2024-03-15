@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #237596;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .header {
+    animation: slideIn 1s ease forwards;
+  }
+  
+
+.introduction {
+    border: 0.3px solid #ccc;
+    background-color: #eff2f3;
+    padding-left: 40px;
+    margin: 20px;
+}
+
+.skills {
+    padding-left: 40px;
+    margin: 20px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 40;
+    padding-left: 40px; 
+}
+
+.skills li {
+    border: 0.3px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: background-color 0.5s; /* Add transition for smooth hover effect */
+    font-weight: bold;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    justify-content: last baseline; /* Align items horizontally */
+    padding-left: 40px; /* Add padding to the left side of the text */
+
+}
+
+.skills li:hover {
+    background-color: #ccc; /* Change background color on hover */
+}
+
+.contact {
+    background-color: #ccc;
+    padding: 20px;
+    margin: 20px;
+}
+
+.contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact li {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: rgb(36, 36, 209);
+}
+
+
+.skills li img,
+.contact li img {
+    width: auto; /* Set width to auto to maintain aspect ratio */
+    height: 3em; /* Set height to match the font size of the list item */
+    margin-right: 1px; /* Add some margin between the icon and the text */
+}
